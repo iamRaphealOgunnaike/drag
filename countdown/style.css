@@ -1,0 +1,110 @@
+html, body {
+    min-height: 100%;
+}
+
+html {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+body {
+    background: #000023;
+    min-height: 100%;
+    width: 100%;
+    /* vertically aligns elements */
+    -webkit-align-self:center;
+    -ms-flex-item-align: center;
+    align-self: center;
+}
+
+.container {
+    width: 70%;
+    background: royalblue;
+    border-radius: 10px;
+    padding: 2rem;
+    /* horizontally aligns elements */
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 100px 3px royalblue;
+
+}
+
+.subContainer {
+    width: 90%;
+    margin: 0 auto;    
+}
+input[type="number"],
+#colonStyle{
+    -webkit-transition: background 1s, color 1s, font-size 1s,
+}
+input{
+    font-size: 2rem;
+    border-radius: 5px;
+    text-align: center;
+    overflow: hidden;
+    border: none;
+
+    /* gives equal widths to flex-cards */
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-flex:1;
+
+    /* make all flexcards have the same height */
+
+    -webkit-align-self:stretch;
+    -ms-flex-item-align: stretch;    
+}
+
+form{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 0.5rem;
+}
+
+.colon{
+    font-size: 4rem;
+    color: white;
+    font-family: monospace;
+    -webkit-transition: text-shadow 1s, font-size 1s, 
+    color 1s,background 1s;
+}
+
+.form_active{
+    background: royalblue;
+    color: gold;
+    font-size: 6rem;
+    text-shadow: 0px 0px 4px 3px navy;
+}
+
+progress{
+    -webkit-appearance:none;
+    appearance: none;
+    position: relative;
+}
+
+.progress_styled{
+    width: 100%;
+    line-height: 2;
+    height: 3rem;
+}
+
+progress::-webkit-progress-bar{
+    background-color: #000023;
+    border-radius: 0px 0px 10px 10px;
+    background-color: clear;
+    border: 5px solid blue;
+    box-shadow: inset 10px 10px 21px rgba(240, 240, 240, .1);
+}
